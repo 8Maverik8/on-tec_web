@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
+      <link rel="stylesheet" href="css/motion-ui.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="https://use.typekit.net/hai2vbq.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
-    <div class="paralax-block">
-        <div class="top-panel--on_black">
+    <div id="global-menu">  
+            <div class="menu-list">
+                <ul>
+                    <li><a href="">Студия</a></li>
+                    <li><a href="">Проекты</a></li>
+                    <li><a href="">Решения</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+    </div>
+    <div id="hero" class="paralax-block">
+        <figure class="on">
+            <span>On.</span>
+            <h1>Вяжем веб-сайты, вышивает приложения и выдуваем аналитику</h1>
+        </figure>
+        <div id="top-line--control">
             <div class="row align-justify align-middle collapse">
                 <div class="shrink columns">
                     <h3>Ontec</h3>
@@ -24,9 +39,19 @@
                 </div>
             </div>
         </div>
+        <div class="bottom-panel--on_black">
+            <div class="row align-justify align-middle collapse">
+                <div class="shrink columns">
+                    <div class="video-title"><img src="img/video_icon.png" class="video-player"><a href=""><strong class="hide-for-small-only">Смотрите: </strong>Проатлет 2017</a></div>
+                </div>
+                <div class="shrink columns">
+                    <div class="video-title"><img src="img/arrow_down-icon.png" class="arrow-down"><a href=""><strong>Вниз</strong> <span class="hide-for-small-only">для продолжения</span></a></div>
+                </div>
+            </div>
+        </div>
         <div class="video"></div>
     </div>
-    <div class="main-content">
+    <div id="main-content">
         <section id="introduction">
             <div class="row collapse">
                 <div class="large-6 medium-6 small-12 columns">
@@ -139,6 +164,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+       <script src="js/vendor/motion-ui.js"></script>
     <script src="js/jquery.backgroundvideo.js"></script>
     <script src="js/app.js"></script>
   </body>
